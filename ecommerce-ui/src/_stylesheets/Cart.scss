@@ -1,0 +1,44 @@
+.cart-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart {
+  background-color: lightgrey;
+  padding: 1rem;
+  border-radius: 5px 5px 0 0;
+  display: grid;
+  gap: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  @media screen and (max-width: 767px) {
+    grid-template-columns: 1fr;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media screen and (min-width: 1024px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }    
+}
+
+.total-cost {
+  background-color: #ebebeb;
+  padding: 1rem;
+  font-weight: bold;
+  text-align: right;
+  border-radius: 0 0 5px 5px;
+}
+
+.close-icon {
+  cursor: pointer;
+}
+
+.empty-cart-icon {
+  margin-left: 0.5rem;
+}

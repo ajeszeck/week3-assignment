@@ -1,0 +1,26 @@
+.shopping-cart {
+  position: relative;
+  margin: 1rem 2.5rem 3rem 1rem;
+  cursor: pointer;
+
+  .shopping-icon {
+    position: absolute;
+    z-index: 100;
+  }
+
+  .number {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #eb9065;
+    border-radius: 50%;
+    position: absolute;
+    height: 1.15rem;
+    width: 1.15rem;
+    z-index: 110;
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: white;
+  }
+}
