@@ -11,7 +11,6 @@
     height: 30vh;
     padding: 1rem;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("../_images/header1.jpg");
-    //background-image: url("../_images/header1.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -29,7 +28,11 @@
   }
 
   .cart-section {
-    margin: 0 1rem 0 1rem;
+    margin: 0 1rem 1rem 1rem;
+  }
+
+  .liked-section {
+    margin: 0 1rem 1rem 1rem;
   }
 
   .header-icons {
@@ -51,7 +54,6 @@
     }
   }
   
-
   .listings {
     display: grid;
     gap: 1rem;

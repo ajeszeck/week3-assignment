@@ -72,13 +72,20 @@
         border-radius: 5px;
         box-shadow: 0 0 3px lightgrey;
         cursor: pointer;
+        font-size: 0.7rem;
       }
     }
   }
 
-  .heart-icon, .plus-icon, .minus-icon {
+  .heart-icon {
     color: #eb9065;
     margin-left: 0.5rem;
+    cursor: pointer;
+  }
+
+  .plus-icon, .minus-icon {
+    color: #eb9065;
+    margin-right: 0.5rem;
     cursor: pointer;
   }
 

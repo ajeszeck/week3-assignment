@@ -1,9 +1,10 @@
 import { Component } from 'react';
 import CompressedListing from './CompressedListing';
-import './_stylesheets/Cart.scss'
+import '../_stylesheets/Cart.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimesCircle } from '@fortawesome/free-solid-svg-icons'
 import { faGrinBeamSweat } from '@fortawesome/free-regular-svg-icons'
+import PropTypes from 'prop-types'
 
 class Cart extends Component {
   render() {
@@ -55,5 +56,34 @@ class Cart extends Component {
     )
   }
 }
+
+Cart.propTypes = {
+  onCart: PropTypes.func.isRequired,
+  onLike: PropTypes.func.isRequired,
+  info: PropTypes.shape({
+    host: PropTypes.shape({
+      isSuperHost: PropTypes.bool,
+      name: PropTypes.string.isRequired,
+    }),
+    houseType: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    inCart: PropTypes.bool.isRequired,
+    location: PropTypes.shape({
+        city: PropTypes.string.isRequired,
+        country: PropTypes.string.isRequired,
+    }),
+    payment: PropTypes.shape({
+      cost: PropTypes.number.isRequired,
+      description: PropTypes.string.isRequired,
+    }),
+    rating: PropTypes.shape({
+      reviews: PropTypes.number.isRequired,
+      stars: PropTypes.number.isRequired,
+    }),
+    title: PropTypes.string.isRequired,
+  })
+}
+
+
 
 export default Cart;
